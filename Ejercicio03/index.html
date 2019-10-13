@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="../assets/js/codemirror/lib/codemirror.js"></script>
+		<link rel="stylesheet" href="../assets/js/codemirror/lib/codemirror.css" />
+		<link rel="stylesheet" href="../assets/js/codemirror/theme/monokai.css" />
+		<script src="../assets/js/codemirror/mode/javascript/javascript.js"></script>
+		<script src="../assets/js/codemirror/mode/css/css.js"></script>
+		<script src="../assets/js/codemirror/mode/xml/xml.js"></script>
+		<script src="../assets/js/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+		<link rel="stylesheet" href="../assets/styles.css" />
+		<title>Ejercicio2</title>
+	</head>
+	<body>
+		<section class="header">
+			<div class="header__profile">
+				<div class="header__profile-image-border">
+					<img class="header__profile__img" src="../assets/img/SachaRetrato.jpg" alt="Sacha Lifsyc" />
+				</div>
+				<p class="header__profile__name">Sacha Lifsyc</p>
+			</div>
+			<div class="header__title">
+				<div class="header__title__course">
+					<h1>Fundamentos de Javascript</h1>
+				</div>
+				<div class="header__title__class-and-module-contianer">
+					<div class="header__class">
+						<p class="header__class__title">Clase:</p>
+						<p class="header__class__name">Variables Números</p>
+					</div>
+					<div class="header__module">
+						<p class="header__module__title">Módulo:</p>
+						<p class="header__module__name">Primeros pasos en Javascript</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="main">
+			<p>
+				Los resultados de esta clase se pueden ver con el inspector de elementos utilizando
+				<span class="shortcut">ctrl + shift + i</span> en windows y <span class="shortcut">cmd + shift + i</span> en Mac
+			</p>
+		</section>
+		<section>
+			<h3>Codigo Javascript</h3>
+			<!-- <div class="code-html">
+				<button class="btn">Copy</button>
+			</div>
+			<div class="code-css">
+				<button class="btn">Copy</button>
+			</div> -->
+			<textarea class="code-js">
+				console.log('Clase 3 Variables Números');
+var age = 34;
+
+console.log(age);
+// incrementar el valor de age +1
+age++;
+console.log(`Incremeta edad +1 ==> ${age}`);
+// incrementar el valor de age +1
+age += 1;
+console.log(`Incremeta edad +1 ==> ${age}`);
+
+var weight = 68;
+// Decremento
+weight = weight - 2;
+console.log(`Bajé dos kilos 💪 ${weight}`);
+// decremento
+weight--;
+
+console.log(`Bajé 1 kilo más 💪 ${weight}`);
+// si me como un sandwich aumento un kg 😁
+var sandwich = 1;
+console.log(`Luego de comer un sandwich mi peso será ==>  ${weight + sandwich}`);
+console.log(`Ahora mi peso es =>> ${weight}`);
+var playSoccer = 1;
+// si Juego al futbol bajo 1kg ⚽
+console.log(` Luego de un partidito de fútbol ==> ${weight - playSoccer} ⚽`);
+// Decimales
+var priceWine = 200.3;
+console.log(`Precio de Vino por unidad ==> ${priceWine}`);
+var quantity = 3;
+// Total por 3 unidades
+var total = priceWine * quantity;
+console.log(`El Precio a pagar por ${quantity} vinos es de ==> ${total}`);
+// Javascript no es muy preciso para manejar decimales.
+total = (priceWine * 100 * quantity) / 100;
+console.log(`1- Pasa El decimal a entero ${priceWine * 100}`);
+console.log(`2-Multiplica por la cantidad ${priceWine * 100 * quantity}`);
+console.log(`3- y Divide por 100 para llegar al valor decimal${(priceWine * 100 * quantity) / 100}`);
+console.log(`3- y Divide por 100 para llegar al valor decimal más preciso ${Math.round(priceWine * 100 * quantity) / 100}`);
+console.log(total);
+// agrega dos decimales luego de la coma
+total = total.toFixed(2);
+
+console.log(` Agrega dos decimales luego de la coma y el resultado es un STRING ==> ${total}`);
+var float = parseFloat(total);
+var float2 = Number(total);
+console.log(`Para transformar en el valor en decimal`);
+console.log(float);
+console.log(`Otra forma de transformar un valor numérico decimal`);
+console.log(float2);
+
+var persons = 2;
+var pizzaSlices = 8;
+var pizzaSlicesPerPerson = pizzaSlices / persons;
+console.log(` Cantidad de  persona comerá ${pizzaSlicesPerPerson} 🍕`);
+
+			</textarea
+			>
+		</section>
+
+		<!-- <script>
+      var editor = CodeMirror(document.getElementById("codeeditor"));
+      console.log(editor);
+    </script> -->
+
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script> -->
+		<script src="../assets/js/main.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
